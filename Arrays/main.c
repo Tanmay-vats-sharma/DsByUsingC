@@ -33,6 +33,7 @@ void main(){
       scanf("%d", &option);
       switch (option)
       {
+        int pos;
       case 1:
         insertAtEnd(a,&n);
         break;
@@ -40,6 +41,9 @@ void main(){
         insertAtBeg(a, &n);
         break;
       case 3:
+        printf("Enter the position: ");
+        scanf("%d", &pos);
+        insertAtPos(a, &n, pos);
         break;  
       default:
         break;

@@ -29,3 +29,15 @@ void insertAtBeg(int a[],int *n){
   }
   a[0] = item;
 }
+
+void insertAtPos(int a[],int *n,int pos){
+  int item;
+  printf("Enter the Element you want to insert: ");
+  scanf("%d", &item);
+  *n += 1;
+  for (int i = (*n) - 1; i > pos-1; i--)
+  {
+    a[i] = a[i - 1];
+  }
+  a[pos-1] = item;
+}
