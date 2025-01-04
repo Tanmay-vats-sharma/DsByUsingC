@@ -13,10 +13,10 @@ void main(){
   do
   {
     printf("Choose your Operation to perform:\n");
-    printf("1. Display");
-    printf("2. Insertion");
-    printf("3. Deletion");
-    printf("4. Exit");
+    printf("1. Display\n");
+    printf("2. Insertion\n");
+    printf("3. Deletion\n");
+    printf("4. Exit\n");
     printf("Enetr your choice 1 or 2 or 3 or 4: ");
     scanf("%d", &choice);
     switch (choice)
@@ -25,10 +25,10 @@ void main(){
       display(a, &n);
       break;  
     case 2:
-      printf("Types of insertion");
-      printf("1. Insertion at Ending");
-      printf("2. Insertion at Beggining");
-      printf("3. Insertion at Specific Position");
+      printf("\nTypes of insertion\n");
+      printf("1. Insertion at Ending\n");
+      printf("2. Insertion at Beggining\n");
+      printf("3. Insertion at Specific Position\n");
       printf("Enter your Choice: ");
       scanf("%d", &option);
       switch (option)
@@ -36,7 +36,11 @@ void main(){
       case 1:
         insertAtEnd(a,&n);
         break;
-      
+      case 2:
+        insertAtBeg(a, &n);
+        break;
+      case 3:
+        break;  
       default:
         break;
       }
