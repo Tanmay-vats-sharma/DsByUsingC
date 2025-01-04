@@ -46,11 +46,39 @@ void main(){
         insertAtPos(a, &n, pos);
         break;  
       default:
+        printf("Enter correct value: ");
         break;
       }
       break;
-    
+    case 3:
+      printf("\nTypes of Deletion\n");
+      printf("1. Deletion at Ending\n");
+      printf("2. Deletion at Beggining\n");
+      printf("3. Deletion at Specific Position\n");
+      printf("Enter your Choice: ");
+      scanf("%d", &option);
+      switch (option)
+      {
+        int pos;
+      case 1:
+        DeleteAtEnd(&n);
+        break;
+      case 2:
+        DeleteAtBeg(a,&n);
+        break;
+      case 3:
+        printf("Enter the position: ");
+        scanf("%d", &pos);
+        DeleteAtPos(a, &n, pos);
+        break;
+      default:
+        printf("Enter correct value: ");
+        break;
+      }
+      case 4:
+        break;
     default:
+      printf("Enetr correct value.");
       break;
     }
   } while (choice!=4);

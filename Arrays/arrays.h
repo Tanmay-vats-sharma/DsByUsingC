@@ -41,3 +41,21 @@ void insertAtPos(int a[],int *n,int pos){
   }
   a[pos-1] = item;
 }
+
+void DeleteAtEnd(int *n){
+  *n -= 1;
+}
+void DeleteAtBeg(int a[],int *n){
+  for (int i = 1; i < *n;i++){
+    a[i - 1] = a[i];
+  }
+  *n -= 1;
+
+}
+
+void DeleteAtPos(int a[],int *n,int pos){
+  for (int i = pos; i < *n; i++){
+    a[i - 1] = a[i];
+  }
+  *n -= 1;
+}
