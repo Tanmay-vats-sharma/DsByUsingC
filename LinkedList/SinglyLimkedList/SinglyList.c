@@ -5,9 +5,11 @@
 node head = NULL;
 void main(){
   int choice,option,pos;
-  head = insertAtEnd(head);
+  head = insertAtBeg(head);
   head = insertAtEnd(head);
   head = insertAtPos(head);
+  Traverse(head);
+  head = DeleteAtPos(head);
   Traverse(head);
   // do
   // {
@@ -15,7 +17,7 @@ void main(){
   //   printf("1. Traverse\n");
   //   printf("2. Insertion\n");
   //   printf("3. Deletion\n");
-  //   printf("4. Exit\n");
+  //   printf("4. Exit\n");1
   //   printf("Enetr your choice 1 or 2 or 3 or 4: ");
   //   scanf("%d", &choice);
   //   switch (choice)
