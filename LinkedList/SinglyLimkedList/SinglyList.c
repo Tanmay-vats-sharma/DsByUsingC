@@ -7,6 +7,7 @@ void main(){
   int choice,option,pos;
   head = insertAtEnd(head);
   head = insertAtEnd(head);
+  head = insertAtPos(head);
   Traverse(head);
   // do
   // {

@@ -40,6 +40,38 @@ node insertAtEnd(node head){
   return temp;
 }
 
+node insertAtPos(node head){
+  int item,pos;
+  int count = 1;
+  node temp = head;
+  printf("Eneter the element: ");
+  scanf("%d", &item);
+  printf("Eneter the position: ");
+  scanf("%d", &pos);
+  node newnode = (node)malloc(sizeof(node));
+  newnode->data = item;
+  newnode->next = NULL;
+  if(pos != 1){
+    while (count < pos-1)
+    {
+      temp = temp->next;
+      count++;
+    }
+    newnode->next = temp->next;
+    temp->next = newnode;
+    return head;
+  }
+  else{
+    temp->data = item;
+    temp->next = head;
+    head = temp;
+    return head;
+  }
+  
+
+  
+}
+
 void Traverse(node head){
   node temp = head;
   while (temp != NULL)
