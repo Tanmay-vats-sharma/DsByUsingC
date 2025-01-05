@@ -5,8 +5,8 @@
 node head = NULL;
 void main(){
   int choice,option,pos;
-  head = insertAtBeg(head);
-  head = insertAtBeg(head);
+  head = insertAtEnd(head);
+  head = insertAtEnd(head);
   Traverse(head);
   // do
   // {
